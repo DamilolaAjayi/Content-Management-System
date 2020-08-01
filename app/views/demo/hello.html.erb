@@ -1,0 +1,15 @@
+<h1>Hello from Hello!</h1>
+
+<%= 2+ 3%>
+<br />
+<% ball= "Soccer" %>
+<%= "Hello #{ball}"%>
+<br />
+<% @array.each do |n| %>
+    <%=n %> <br/>
+<% end %>
+
+<a href="/demo/index">Demo Index</a><br/>
+<%= link_to('Demo Index', {:action => 'index'})%> <br />
+
+<%= link_to('Demo Index', {:action => 'index', :page=> 5, :id => 20})%> 

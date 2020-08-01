@@ -1,0 +1,13 @@
+<h1>Hello from Index!</h1>
+
+ID: <%= params[:id] %>
+<br />
+ID: <%= @id %>
+<br />
+PAGE: <%= @page %>
+<br />
+NEXT PAGE: <%= params[:id].to_i + 1%>
+
+<br />
+
+<%= link_to('Back to Hello', {:action => 'hello'})%> 
