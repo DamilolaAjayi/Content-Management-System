@@ -8,6 +8,6 @@ class CreateAdminUsersPagesJoin < ActiveRecord::Migration[6.0]
     add_index("admin_users_pages", ["admin_user_id","page_id"])
   end
   def down
-    drop :admin_users_pages
+    drop_table :admin_users_pages
   end
 end
