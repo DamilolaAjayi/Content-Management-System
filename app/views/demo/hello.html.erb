@@ -13,3 +13,7 @@
 <%= link_to('Demo Index', {:action => 'index'})%> <br />
 
 <%= link_to('Demo Index', {:action => 'index', :page=> 5, :id => 20})%> 
+
+<% text = "We know"%>
+
+<%= javascript_tag("alert('#{text}')")%>

@@ -10,4 +10,6 @@ NEXT PAGE: <%= params[:id].to_i + 1%>
 
 <br />
 
-<%= link_to('Back to Hello', {:action => 'hello'})%> 
+<%= link_to('Back to Hello', {:action => 'hello', :page => 5, :id => 20})%> <br />
+
+<%= link_to('Meet me', '#', :onclick => "winner('Dami'); return true;")%>

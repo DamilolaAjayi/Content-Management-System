@@ -16,7 +16,7 @@ default: &default
   pool: 5
   host: localhost
   username: railsuser
-  password: *************
+  password: Temi-79911-dami
   socket: /tmp/mysql.sock
 
 development:

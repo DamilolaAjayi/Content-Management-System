@@ -1,4 +1,5 @@
 class DemoController < ApplicationController
+  layout 'application'
   def index
     @id = params[:id]
     @page = params[:page]
@@ -11,5 +12,7 @@ class DemoController < ApplicationController
 
   def other_hello
     redirect_to(:action=> 'index')
+  end
+  def escape_output
   end
 end

@@ -1,8 +1,4 @@
-<% if !flash[:notice].blank? %>
-    <div class="notice">
-        <%= flash[:notice] %>
-    </div>
-<% end %>
+<%  @page_title = "All Sections" %>
 
 <div class="Sections index">
   <h2>Sections</h2>
@@ -24,7 +20,7 @@
       <td><%= section.position %></td>
       <td><%= section.page_id %></td>
       <td><%= section.name %></td>
-      <td class="center"><%= section.visible ? 'Yes' : 'No' %></td>
+      <td class="center"><%= status_tag(section.visible) %></td>
       <td class="center"><%= section.content_type %></td>
       <td class="center"><%= section.content %></td>
       <td class="actions">
